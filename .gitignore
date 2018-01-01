@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# Source data
+*.xlsx
+*.csv
+*.h5
+
+# Result image file
+*.png
+
+# Pycharm file
+/.idea/*
