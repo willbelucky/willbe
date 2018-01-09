@@ -9,4 +9,4 @@
 *.png
 
 # Pycharm file
-/.idea/*
+.idea/
