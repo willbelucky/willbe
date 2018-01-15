@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1613472e-564a-4b54-a4bc-033a708d3bb3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/table/tables.py" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/willbe.iml" afterPath="$PROJECT_DIR$/.idea/willbe.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scrapper/database_reader.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scrapper/database_writer.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scrapper/krx.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scrapper/sql.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scrapper/test_database_reader.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scrapper/test_database_writer.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scrapper/test_krx.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/code_converter.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/database_supporter.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/date_supporter.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/pandas_expansion.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/parallel_process_supporter.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/table/base.py" afterPath="$PROJECT_DIR$/table/base.py" />
-      <change beforePath="$PROJECT_DIR$/table/stock_daily_price.py" afterPath="$PROJECT_DIR$/table/test_tables.py" />
-      <change beforePath="$PROJECT_DIR$/table/stock_master.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/table/stock_minute_price.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,52 +24,95 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMinutePrice_test_get_one_week_stock_minute_prices.coverage" NAME="Unittests for test_tables.TestStockMinutePrice.test_get_one_week_stock_minute_prices Coverage Results" MODIFIED="1515463762244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_krx_TestGetStockMasters_test_get_stock_daily_price.coverage" NAME="Unittests for test_krx.TestGetStockMasters.test_get_stock_daily_price Coverage Results" MODIFIED="1515581710549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMaster_test_get_stock_masters.coverage" NAME="Unittests for test_tables.TestStockMaster.test_get_stock_masters Coverage Results" MODIFIED="1515346620530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_writer_TestSaveStockDailyPrices_test_save_stock_daily_price.coverage" NAME="Unittests for test_database_writer.TestSaveStockDailyPrices.test_save_stock_daily_price Coverage Results" MODIFIED="1515582795774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$database_writer.coverage" NAME="database_writer Coverage Results" MODIFIED="1515826282207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_writer_TestSaveStockDailyPrices_test_save_stock_daily_prices.coverage" NAME="Unittests for test_database_writer.TestSaveStockDailyPrices.test_save_stock_daily_prices Coverage Results" MODIFIED="1515597372264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices.coverage" NAME="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices Coverage Results" MODIFIED="1515473262752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMinutePrice_test_get_all_stock_minute_prices.coverage" NAME="Unittests for test_tables.TestStockMinutePrice.test_get_all_stock_minute_prices Coverage Results" MODIFIED="1515372744924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_krx_TestGetStockMasters_test_get_stock_masters.coverage" NAME="Unittests for test_krx.TestGetStockMasters.test_get_stock_masters Coverage Results" MODIFIED="1515849190018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMinutePrice_test_get_one_week_stock_minute_prices.coverage" NAME="Unittests for test_tables.TestStockMinutePrice.test_get_one_week_stock_minute_prices Coverage Results" MODIFIED="1515463762244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMaster_test_get_stock_master_table.coverage" NAME="Unittests for test_tables.TestStockMaster.test_get_stock_master_table Coverage Results" MODIFIED="1515346089213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_krx_TestGetStockTrend_test_get_stock_trend.coverage" NAME="Unittests for test_krx.TestGetStockTrend.test_get_stock_trend Coverage Results" MODIFIED="1515961941508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_reader_TestStockDailyPrices_test_count_stock_daily_prices.coverage" NAME="Unittests for test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices Coverage Results" MODIFIED="1516024724993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_in_test_tables_py.coverage" NAME="Unittests in test_tables.py Coverage Results" MODIFIED="1515463935569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_reader_TestStockMasters_test_get_stock_masters.coverage" NAME="Unittests for test_database_reader.TestStockMasters.test_get_stock_masters Coverage Results" MODIFIED="1516024398761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_krx_TestGetStockDailyPrices_test_get_stock_daily_prices.coverage" NAME="Unittests for test_krx.TestGetStockDailyPrices.test_get_stock_daily_prices Coverage Results" MODIFIED="1515826669314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_krx_TestGetStockMasters_test_save_stock_masters.coverage" NAME="Unittests for test_krx.TestGetStockMasters.test_save_stock_masters Coverage Results" MODIFIED="1515580062088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMaster_test_get_one_stock_master_by_code.coverage" NAME="Unittests for test_tables.TestStockMaster.test_get_one_stock_master_by_code Coverage Results" MODIFIED="1515415026645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockDailyPrice_test_get_one_company_one_week_stock_daily_prices.coverage" NAME="Unittests for test_tables.TestStockDailyPrice.test_get_one_company_one_week_stock_daily_prices Coverage Results" MODIFIED="1515473348862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices.coverage" NAME="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices Coverage Results" MODIFIED="1515473262752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_krx_TestGetStockTrends_test_get_stock_trends.coverage" NAME="Unittests for test_krx.TestGetStockTrends.test_get_stock_trends Coverage Results" MODIFIED="1515970123727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_reader_TestStockTrends_test_count_stock_trends.coverage" NAME="Unittests for test_database_reader.TestStockTrends.test_count_stock_trends Coverage Results" MODIFIED="1516028147383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_reader_TestStockTrends_test_get_stock_trends.coverage" NAME="Unittests for test_database_reader.TestStockTrends.test_get_stock_trends Coverage Results" MODIFIED="1516028158473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestTables_test_get_stock_master_table.coverage" NAME="Unittests for test_tables.TestTables.test_get_stock_master_table Coverage Results" MODIFIED="1515345256584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMinutePrice_test_get_all_stock_minute_prices.coverage" NAME="Unittests for test_tables.TestStockMinutePrice.test_get_all_stock_minute_prices Coverage Results" MODIFIED="1515372744924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_reader_TestStockDailyPrices_test_get_stock_daily_prices.coverage" NAME="Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices Coverage Results" MODIFIED="1516024840772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/table/base.py">
+      <file leaf-file-name="database_writer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapper/database_writer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1740">
-              <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+            <state relative-caret-position="407">
+              <caret line="186" column="26" lean-forward="true" selection-start-line="186" selection-start-column="26" selection-end-line="186" selection-end-column="26" />
               <folding>
-                <element signature="e#74#83#0" expanded="true" />
+                <element signature="e#75#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tables.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/table/tables.py">
+      <file leaf-file-name="test_database_reader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapper/test_database_reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+            <state relative-caret-position="212">
+              <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
               <folding>
-                <element signature="e#74#93#0" expanded="true" />
+                <element signature="e#75#104#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_tables.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/table/test_tables.py">
+      <file leaf-file-name="sql.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapper/sql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="345">
+              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
-                <element signature="e#74#103#0" expanded="true" />
+                <marker date="1516028348849" expanded="true" signature="116:421" ph="CREATE TABLE... stock_master" />
+                <marker date="1516028348849" expanded="true" signature="473:1000" ph="CREATE TABLE... stock_price" />
+                <marker date="1516028348849" expanded="true" signature="1046:2144" ph="CREATE TABLE... stock_trend" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_krx.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapper/test_krx.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="47" column="66" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="47" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database_reader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapper/database_reader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="98" column="4" lean-forward="false" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+              <folding>
+                <marker date="1516024987404" expanded="true" signature="317:347" ph="SELECT COUNT... missing_value" />
+                <marker date="1516024987404" expanded="true" signature="1160:1174" ph="SELECT * FRO... missing_value" />
+                <marker date="1516024987404" expanded="true" signature="2206:2238" ph="SELECT COUNT... missing_value" />
+                <marker date="1516024987404" expanded="true" signature="4034:4048" ph="SELECT * FRO... missing_value" />
+                <marker date="1516024987404" expanded="true" signature="5567:5599" ph="SELECT COUNT... missing_value" />
+                <marker date="1516024987404" expanded="true" signature="7378:7392" ph="SELECT * FRO... missing_value" />
               </folding>
             </state>
           </provider>
@@ -90,6 +137,14 @@
       <find>duplicat</find>
       <find>print</find>
       <find>o</find>
+      <find>get_stock_price</find>
+      <find>stock_price</find>
+      <find>zip</find>
+      <find>Exception occur</find>
+      <find>count</find>
+      <find>code</find>
+      <find>StockMaster</find>
+      <find>12-12</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,11 +168,21 @@
         <option value="$PROJECT_DIR$/root/models.py" />
         <option value="$PROJECT_DIR$/table/stock_master.py" />
         <option value="$PROJECT_DIR$/table/stock_daily_price.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/table/stock_minute_price.py" />
         <option value="$PROJECT_DIR$/table/tables.py" />
         <option value="$PROJECT_DIR$/table/test_tables.py" />
         <option value="$PROJECT_DIR$/table/base.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/util/database_supporter.py" />
+        <option value="$PROJECT_DIR$/util/parallel_process_supporter.py" />
+        <option value="$PROJECT_DIR$/scrapper/test_database_writer.py" />
+        <option value="$PROJECT_DIR$/scrapper/test_krx.py" />
+        <option value="$PROJECT_DIR$/util/pandas_expansion.py" />
+        <option value="$PROJECT_DIR$/scrapper/krx.py" />
+        <option value="$PROJECT_DIR$/scrapper/database_reader.py" />
+        <option value="$PROJECT_DIR$/scrapper/database_writer.py" />
+        <option value="$PROJECT_DIR$/scrapper/test_database_reader.py" />
+        <option value="$PROJECT_DIR$/scrapper/sql.py" />
       </list>
     </option>
   </component>
@@ -169,6 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,18 +256,17 @@
             <path>
               <item name="willbe" type="b2602c69:ProjectViewProjectNode" />
               <item name="willbe" type="462c0819:PsiDirectoryNode" />
-              <item name="table" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="willbe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="willbe" type="462c0819:PsiDirectoryNode" />
+              <item name="table" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,12 +276,13 @@
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/root" />
       <recent name="$PROJECT_DIR$/gatherings" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -230,7 +297,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_tables.TestStockDailyPrice.test_get_one_company_one_week_stock_daily_prices">
+  <component name="RunManager" selected="Python tests.Unittests for test_database_reader.TestStockTrends.test_get_stock_trends">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -269,6 +336,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="database_writer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="willbe" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapper/database_writer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="willbe" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -291,7 +377,7 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -304,10 +390,10 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices&quot;" />
+      <option name="_new_target" value="&quot;test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_one_company_one_week_stock_daily_prices" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -320,10 +406,10 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tables.TestStockDailyPrice.test_get_one_company_one_week_stock_daily_prices&quot;" />
+      <option name="_new_target" value="&quot;test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for test_tables.TestStockMaster.test_get_one_stock_master_by_code" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -336,10 +422,10 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tables.TestStockMaster.test_get_one_stock_master_by_code&quot;" />
+      <option name="_new_target" value="&quot;test_database_reader.TestStockTrends.test_count_stock_trends&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for test_tables.TestStockMinutePrice.test_get_one_week_stock_minute_prices" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -352,24 +438,8 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_tables.TestStockMinutePrice.test_get_one_week_stock_minute_prices&quot;" />
+      <option name="_new_target" value="&quot;test_database_reader.TestStockTrends.test_get_stock_trends&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Unittests in test_tables.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="willbe" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/table/test_tables.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -455,19 +525,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.willbe" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_tables.TestStockMinutePrice.test_get_one_week_stock_minute_prices" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_tables.TestStockMaster.test_get_one_stock_master_by_code" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_tables.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests for test_tables.TestStockDailyPrice.test_get_one_company_one_week_stock_daily_prices" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" />
+      <item index="5" class="java.lang.String" itemvalue="Python.database_writer" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for test_tables.TestStockDailyPrice.test_get_one_company_one_week_stock_daily_prices" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_tables.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_tables.TestStockMinutePrice.test_get_one_week_stock_minute_prices" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_tables.TestStockMaster.test_get_one_stock_master_by_code" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" />
+        <item index="2" class="java.lang.String" itemvalue="Python.database_writer" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices" />
       </list>
     </recent_temporary>
   </component>
@@ -492,54 +562,69 @@
       <option name="project" value="LOCAL" />
       <updated>1514792666822</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1. Make base singleton table model.&#10;2. Add stock_master, stock_minute_price, stock_daily_price.&#10;3. Add test cases.">
+      <created>1515473491465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1515473491465</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1. Make base singleton table model.&#10;2. Add stock_master, stock_minute_price, stock_daily_price.&#10;3. Add test cases.">
+      <created>1515473520960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515473520960</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices - 2018.01.08 at 22h 39m 34s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_count_stock_trends - 2018.01.15 at 08h 03m 14s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices - 2018.01.08 at 22h 40m 44s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_count_stock_trends - 2018.01.15 at 08h 04m 30s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices - 2018.01.08 at 22h 41m 49s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_count_stock_trends - 2018.01.15 at 08h 06m 08s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices - 2018.01.08 at 22h 44m 24s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_count_stock_trends - 2018.01.15 at 08h 55m 55s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices - 2018.01.08 at 22h 44m 34s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_get_stock_trends - 2018.01.15 at 08h 04m 12s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices - 2018.01.08 at 22h 44m 48s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_get_stock_trends - 2018.01.15 at 08h 06m 23s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices - 2018.01.08 at 22h 47m 40s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_get_stock_trends - 2018.01.15 at 08h 06m 44s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices - 2018.01.08 at 22h 47m 43s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_get_stock_trends - 2018.01.15 at 08h 07m 10s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_one_company_one_week_stock_daily_prices - 2018.01.08 at 22h 49m 02s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_one_company_one_week_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_get_stock_trends - 2018.01.15 at 08h 07m 49s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_tables_TestStockDailyPrice_test_get_one_company_one_week_stock_daily_prices - 2018.01.08 at 22h 49m 09s.xml">
-      <configuration name="Unittests for test_tables.TestStockDailyPrice.test_get_one_company_one_week_stock_daily_prices" configurationId="tests" />
+    <history-entry file="Unittests_for_test_database_reader_TestStockTrends_test_get_stock_trends - 2018.01.15 at 08h 56m 06s.xml">
+      <configuration name="Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.502442" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.503663" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="370" height="850" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.490232" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32629108" sideWeight="0.496337" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20880246" sideWeight="0.46031746" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20695971" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22405373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -554,7 +639,7 @@
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,16 +650,94 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialize willbe project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialize willbe project." />
+    <MESSAGE value="1. Make base singleton table model.&#10;2. Add stock_master, stock_minute_price, stock_daily_price.&#10;3. Add test cases." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Make base singleton table model.&#10;2. Add stock_master, stock_minute_price, stock_daily_price.&#10;3. Add test cases." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>stock_trends['date']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stock_trends.index</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stock_masters.loc[code, 'short_code']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stock_masters</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stock_masters.loc[[code], 'short_code']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row['short_code']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>index[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stock_daily_prices</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pd.read_excel(BytesIO(r.content), thousands=',')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>stock_daily_prices = pd.read_csv(BytesIO(r.content), header=0, thousands=',', usecols=stock_daily_price_usecols.keys())</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>BytesIO(r.content).getvalue()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>BytesIO(r.content)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pd.read_csv(BytesIO(r.content), header=0, thousands=',', usecols=stock_daily_price_usecols.keys())</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pd.read_excel(BytesIO(r.content).getvalue())</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(stock_daily_prices)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>table.index._levels[1][0]</expression-string>
         <language-id>Python</language-id>
@@ -590,126 +753,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>cls._Table__selected_table.index._levels[1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cls._Table__selected_table.index</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cls._Table__selected_table.index['date']</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cls._Table__selected_table</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cls._Table__selected_table['date']</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cls._Table__selected_table[1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/root/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatherings/urls.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25950">
-          <caret line="1769" column="6" lean-forward="false" selection-start-line="1769" selection-start-column="6" selection-end-line="1769" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatherings/models.py" />
-    <entry file="file://$PROJECT_DIR$/views/views.py" />
-    <entry file="file://$PROJECT_DIR$/views/urls.py" />
-    <entry file="file://$PROJECT_DIR$/root/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatherings/urls.py" />
-    <entry file="file://$PROJECT_DIR$/gatherings/migrations/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/gatherings/migrations/0002_auto_20170806_0507.py" />
-    <entry file="file://$PROJECT_DIR$/gatherings/migrations/0001_initial.py" />
-    <entry file="file://$PROJECT_DIR$/gatherings/views.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/bs4/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatherings/scrapping.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas_datareader/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas_datareader/google/daily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas_datareader/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="71" lean-forward="true" selection-start-line="2" selection-start-column="71" selection-end-line="2" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="33" column="7" lean-forward="false" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/fields/related.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="791" column="36" lean-forward="false" selection-start-line="791" selection-start-column="27" selection-end-line="791" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="1480" column="44" lean-forward="true" selection-start-line="1480" selection-start-column="8" selection-end-line="1480" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
@@ -741,22 +787,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/table/stock_master.py" />
-    <entry file="file://$PROJECT_DIR$/data/stock_daily_price.csv" />
     <entry file="file://$PROJECT_DIR$/table/stock_daily_price.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="3543" column="8" lean-forward="false" selection-start-line="3543" selection-start-column="8" selection-end-line="3543" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/-2010535109/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="2563" column="8" lean-forward="false" selection-start-line="2563" selection-start-column="8" selection-end-line="2563" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/root/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -764,15 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="716" column="27" lean-forward="true" selection-start-line="716" selection-start-column="27" selection-end-line="716" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/stock_master.csv" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/indexes/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1116">
@@ -781,13 +803,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/stock_master.hdf" />
-    <entry file="file://$PROJECT_DIR$/data/stock_master.h5">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="3" column="546" lean-forward="false" selection-start-line="3" selection-start-column="546" selection-end-line="3" selection-end-column="546" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/stock_master.h5" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/generic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -800,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="2479" column="0" lean-forward="false" selection-start-line="2479" selection-start-column="0" selection-end-line="2479" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="285" column="4" lean-forward="false" selection-start-line="285" selection-start-column="4" selection-end-line="285" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,19 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/warnings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="113" column="37" lean-forward="true" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,44 +859,251 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="536" column="26" lean-forward="true" selection-start-line="536" selection-start-column="26" selection-end-line="536" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="821" column="0" lean-forward="false" selection-start-line="821" selection-start-column="0" selection-end-line="821" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/table/base.py">
+    <entry file="file://$PROJECT_DIR$/util/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/util/progress_bar.py" />
+    <entry file="file://$PROJECT_DIR$/util/database_supporter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1740">
-          <caret line="44" column="57" lean-forward="true" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="57" />
+        <state relative-caret-position="715">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <element signature="e#74#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table/tables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-          <folding>
-            <element signature="e#74#93#0" expanded="true" />
+            <element signature="e#75#90#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/table/test_tables.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="240">
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="17" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="821" column="0" lean-forward="false" selection-start-line="821" selection-start-column="0" selection-end-line="821" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="708" column="0" lean-forward="false" selection-start-line="708" selection-start-column="0" selection-end-line="708" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/dtypes/cast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="702" column="0" lean-forward="false" selection-start-line="702" selection-start-column="0" selection-end-line="702" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2017.3/python_stubs/-2010535109/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="2817" column="8" lean-forward="false" selection-start-line="2817" selection-start-column="8" selection-end-line="2817" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/concurrent/futures/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="161" column="19" lean-forward="true" selection-start-line="161" selection-start-column="19" selection-end-line="161" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/stock_master.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="1909" column="0" lean-forward="false" selection-start-line="1909" selection-start-column="0" selection-end-line="1909" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/date_supporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/parallel_process_supporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="97" column="7" lean-forward="false" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
           <folding>
-            <element signature="e#74#103#0" expanded="true" />
+            <element signature="e#0#64#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/pandas_expansion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/reshape/concat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table/tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1432" column="8" lean-forward="false" selection-start-line="1432" selection-start-column="8" selection-end-line="1432" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/krx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding>
+            <element signature="e#75#86#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/stock_daily_price.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="165">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="177" column="8" lean-forward="false" selection-start-line="177" selection-start-column="8" selection-end-line="177" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/test_database_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/test_krx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="47" column="66" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="47" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/database_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="98" column="4" lean-forward="false" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+          <folding>
+            <marker date="1516024987404" expanded="true" signature="317:347" ph="SELECT COUNT... missing_value" />
+            <marker date="1516024987404" expanded="true" signature="1160:1174" ph="SELECT * FRO... missing_value" />
+            <marker date="1516024987404" expanded="true" signature="2206:2238" ph="SELECT COUNT... missing_value" />
+            <marker date="1516024987404" expanded="true" signature="4034:4048" ph="SELECT * FRO... missing_value" />
+            <marker date="1516024987404" expanded="true" signature="5567:5599" ph="SELECT COUNT... missing_value" />
+            <marker date="1516024987404" expanded="true" signature="7378:7392" ph="SELECT * FRO... missing_value" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/database_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="186" column="26" lean-forward="true" selection-start-line="186" selection-start-column="26" selection-end-line="186" selection-end-column="26" />
+          <folding>
+            <element signature="e#75#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/test_database_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#75#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <marker date="1516028348849" expanded="true" signature="116:421" ph="CREATE TABLE... stock_master" />
+            <marker date="1516028348849" expanded="true" signature="473:1000" ph="CREATE TABLE... stock_price" />
+            <marker date="1516028348849" expanded="true" signature="1046:2144" ph="CREATE TABLE... stock_trend" />
           </folding>
         </state>
       </provider>
