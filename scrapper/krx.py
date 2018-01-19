@@ -247,7 +247,7 @@ def get_stock_trend(date, code, short_code, company_name):
         'pagePath': '/contents/MKD/10/1002/10020101/MKD10020101.jsp',
     }
 
-    r = requests.post(gen_otp_url, gen_otp_data)
+    r = requests.get(gen_otp_url, gen_otp_data)
     request_code = r.content
 
     # STEP 02: download
