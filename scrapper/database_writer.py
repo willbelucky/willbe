@@ -10,7 +10,7 @@ from datetime import datetime
 from pathlib import Path
 
 from sqlalchemy import types
-from sqlalchemy.exc import IntegrityError, SQLAlchemyError, InterfaceError
+from sqlalchemy.exc import IntegrityError, SQLAlchemyError, InterfaceError, OperationalError
 
 import scrapper.database_reader as dr
 from scrapper import krx
@@ -175,7 +175,8 @@ def save_stock_trend(date):
         except IntegrityError:
             pass
 
-    except SQLAlchemyError or EnvironmentError:
+    except SQLAlchemyError or EnvironmentError or OperationalError:
+        print('Error is occur at {}.'.format(date))
         traceback.print_exc()
 
     finally:
@@ -183,6 +184,6 @@ def save_stock_trend(date):
 
 
 if __name__ == '__main__':
-    # save_stock_masters()
+    save_stock_masters()
     # save_stock_daily_prices(start_date=datetime.today())
-    save_stock_trends(start_date=datetime(2017, 12, 11), end_date=datetime(2017, 12, 11))
+    save_stock_trends(end_date=datetime(2014, 12, 1))

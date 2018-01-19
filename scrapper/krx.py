@@ -210,6 +210,9 @@ def get_stock_trends(date):
 
     stock_daily_prices = dr.get_stock_daily_prices(start_date=date, end_date=date)
 
+    if len(stock_daily_prices) == 0:
+        return pd.DataFrame()
+
     results = []
     for index, row in stock_daily_prices.iterrows():
         code = index[0]
@@ -224,7 +227,7 @@ def get_stock_trends(date):
     if len(results) > 0:
         stock_trends = pd.concat(results)
     else:
-        stock_trends = pd.DataFrame()
+        raise RuntimeError("{} has no result.".format(date))
 
     return stock_trends
 
