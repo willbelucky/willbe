@@ -127,7 +127,7 @@ def get_stock_daily_prices(date=datetime.today()):
         'pagePath': '/contents/MKD/04/0404/04040200/MKD04040200.jsp',
     }
 
-    r = requests.get(gen_otp_url, gen_otp_data)
+    r = requests.get(url=gen_otp_url, params=gen_otp_data)
     code = r.content
 
     # STEP 02: download
