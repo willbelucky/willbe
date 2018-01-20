@@ -184,6 +184,6 @@ def save_stock_trend(date):
 
 
 if __name__ == '__main__':
-    save_stock_masters()
+    # save_stock_masters()
     # save_stock_daily_prices(start_date=datetime.today())
     save_stock_trends(end_date=datetime(2014, 12, 1))
