@@ -49,7 +49,7 @@ def get_stock_masters():
     }
 
     r = requests.post(down_url, down_data)
-    dict_stock_masters = json.loads(BytesIO(r.content).getvalue())['block1']
+    dict_stock_masters = json.loads(str(BytesIO(r.content).getvalue()))['block1']
     listed_stock_masters = pd.DataFrame(dict_stock_masters)
     listed_stock_masters = listed_stock_masters.rename(columns={'full_code': 'code',
                                                                 'codeName': 'company_name',
