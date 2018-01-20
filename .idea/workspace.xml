@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1613472e-564a-4b54-a4bc-033a708d3bb3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/util/request_supporter.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_cnn.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/logs/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/model_check_points/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/logging_supporter.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/machine_learning_supporter.py" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/scrapper/database_writer.py" afterPath="$PROJECT_DIR$/scrapper/database_writer.py" />
-      <change beforePath="$PROJECT_DIR$/scrapper/krx.py" afterPath="$PROJECT_DIR$/scrapper/krx.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +21,7 @@
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_krx_TestGetStockMasters_test_get_stock_daily_price.coverage" NAME="Unittests for test_krx.TestGetStockMasters.test_get_stock_daily_price Coverage Results" MODIFIED="1515581710549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMaster_test_get_stock_masters.coverage" NAME="Unittests for test_tables.TestStockMaster.test_get_stock_masters Coverage Results" MODIFIED="1515346620530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_writer_TestSaveStockDailyPrices_test_save_stock_daily_price.coverage" NAME="Unittests for test_database_writer.TestSaveStockDailyPrices.test_save_stock_daily_price Coverage Results" MODIFIED="1515582795774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/willbe$database_writer.coverage" NAME="database_writer Coverage Results" MODIFIED="1515826282207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/willbe$database_writer.coverage" NAME="database_writer Coverage Results" MODIFIED="1516470330458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_database_writer_TestSaveStockDailyPrices_test_save_stock_daily_prices.coverage" NAME="Unittests for test_database_writer.TestSaveStockDailyPrices.test_save_stock_daily_prices Coverage Results" MODIFIED="1515597372264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockDailyPrice_test_get_all_stock_daily_prices.coverage" NAME="Unittests for test_tables.TestStockDailyPrice.test_get_all_stock_daily_prices Coverage Results" MODIFIED="1515473262752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/willbe$Unittests_for_test_tables_TestStockMinutePrice_test_get_all_stock_minute_prices.coverage" NAME="Unittests for test_tables.TestStockMinutePrice.test_get_all_stock_minute_prices Coverage Results" MODIFIED="1515372744924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -44,56 +47,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="database_writer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapper/database_writer.py">
+      <file leaf-file-name="mnist_cnn.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/keras_examples/mnist_cnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2250">
-              <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-              <folding>
-                <element signature="e#75#84#0" expanded="true" />
-                <marker date="1516395860004" expanded="true" signature="6284:6363" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connection.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/mysql/connector/connection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11865">
-              <caret line="812" column="0" lean-forward="false" selection-start-line="812" selection-start-column="0" selection-end-line="812" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="krx.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapper/krx.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="286" column="19" lean-forward="false" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="19" />
-              <folding>
-                <element signature="e#75#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="request_supporter.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util/request_supporter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/requests/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="60" column="4" lean-forward="false" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+            <state relative-caret-position="565">
+              <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -126,6 +84,11 @@
       <find>code</find>
       <find>StockMaster</find>
       <find>12-12</find>
+      <find>input_shape</find>
+      <find>batch_size</find>
+      <find>epochs</find>
+      <find>num_classes</find>
+      <find>checkpoint_path</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,10 +124,17 @@
         <option value="$PROJECT_DIR$/scrapper/database_reader.py" />
         <option value="$PROJECT_DIR$/scrapper/test_database_reader.py" />
         <option value="$PROJECT_DIR$/scrapper/sql.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/scrapper/database_writer.py" />
         <option value="$PROJECT_DIR$/util/request_supporter.py" />
         <option value="$PROJECT_DIR$/scrapper/krx.py" />
+        <option value="$PROJECT_DIR$/util/argument_supporter.py" />
+        <option value="$PROJECT_DIR$/scrapper/database_writer.py" />
+        <option value="$PROJECT_DIR$/data/__init__.py" />
+        <option value="$PROJECT_DIR$/logs/__init__.py" />
+        <option value="$PROJECT_DIR$/util/logging_supporter.py" />
+        <option value="$PROJECT_DIR$/model_check_points/__init__.py" />
+        <option value="$PROJECT_DIR$/keras_examples/mnist_cnn.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/util/machine_learning_supporter.py" />
       </list>
     </option>
   </component>
@@ -216,6 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,6 +199,21 @@
               <item name="willbe" type="b2602c69:ProjectViewProjectNode" />
               <item name="willbe" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="willbe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="willbe" type="462c0819:PsiDirectoryNode" />
+              <item name="keras_examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="willbe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="willbe" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="willbe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="willbe" type="462c0819:PsiDirectoryNode" />
+              <item name="model_check_points" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="willbe" type="b2602c69:ProjectViewProjectNode" />
@@ -252,8 +239,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.database_writer">
+  <component name="RunManager" selected="Python.mnist_cnn">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -342,6 +327,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="mnist_cnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="willbe" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras_examples/mnist_cnn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="willbe" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -363,22 +367,6 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-    </configuration>
-    <configuration name="Unittests for test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="willbe" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -512,19 +500,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.willbe" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" />
-      <item index="5" class="java.lang.String" itemvalue="Python.database_writer" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" />
+      <item index="4" class="java.lang.String" itemvalue="Python.database_writer" />
+      <item index="5" class="java.lang.String" itemvalue="Python.mnist_cnn" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.database_writer" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_count_stock_daily_prices" />
+        <item index="0" class="java.lang.String" itemvalue="Python.mnist_cnn" />
+        <item index="1" class="java.lang.String" itemvalue="Python.database_writer" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_get_stock_trends" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockTrends.test_count_stock_trends" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for test_database_reader.TestStockDailyPrices.test_get_stock_daily_prices" />
       </list>
     </recent_temporary>
   </component>
@@ -577,7 +565,70 @@
       <option name="project" value="LOCAL" />
       <updated>1516028535559</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="1. Add request_supporter, but did not use.">
+      <created>1516395914940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1516395914940</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1. Change post to get in krx.get_stock_trends()">
+      <created>1516402237446</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1516402237446</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1. Change post to get in krx.get_stock_master()">
+      <created>1516426799883</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1516426799883</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1. Change post to get in krx.get_stock_master()">
+      <created>1516426912740</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1516426912740</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1. Change post to get in krx.get_stock_master()">
+      <created>1516426934379</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1516426934379</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1. To solve below problem:&#10;Traceback (most recent call last):&#10;  File &quot;scrapper/database_writer.py&quot;, line 187, in &lt;module&gt;&#10;    save_stock_masters()&#10;  File &quot;scrapper/database_writer.py&quot;, line 35, in save_stock_masters&#10;    new_stock_masters = krx.get_stock_masters()&#10;  File &quot;/home/ubuntu/willbe/scrapper/krx.py&quot;, line 52, in get_stock_masters&#10;    dict_stock_masters = json.loads(BytesIO(r.content).getvalue())['block1']&#10;  File &quot;/usr/lib/python3.5/json/__init__.py&quot;, line 312, in loads&#10;    s.__class__.__name__))&#10;TypeError: the JSON object must be str, not 'bytes'">
+      <created>1516463891215</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1516463891215</updated>
+    </task>
+    <task id="LOCAL-00012" summary="1. 일단 save_stock_masters()의 오류는 무시&#10;Traceback (most recent call last):&#10;  File &quot;scrapper/database_writer.py&quot;, line 187, in &lt;module&gt;&#10;    save_stock_masters()&#10;  File &quot;scrapper/database_writer.py&quot;, line 35, in save_stock_masters&#10;    new_stock_masters = krx.get_stock_masters()&#10;  File &quot;/home/ubuntu/willbe/scrapper/krx.py&quot;, line 52, in get_stock_masters&#10;    dict_stock_masters = json.loads(str(BytesIO(r.content).getvalue()))['block1']&#10;  File &quot;/usr/lib/python3.5/json/__init__.py&quot;, line 319, in loads&#10;    return _default_decoder.decode(s)&#10;  File &quot;/usr/lib/python3.5/json/decoder.py&quot;, line 339, in decode&#10;    obj, end = self.raw_decode(s, idx=_w(s, 0).end())&#10;  File &quot;/usr/lib/python3.5/json/decoder.py&quot;, line 357, in raw_decode&#10;    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None&#10;json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)">
+      <created>1516464016090</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1516464016091</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1. Add an argparser to database_writer.py">
+      <created>1516470384274</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1516470384274</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1. Make sure an existence of directory data by __init__.py.">
+      <created>1516483959246</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1516483959246</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -619,10 +670,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32629108" sideWeight="0.510989" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="370" height="850" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.485348" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32629108" sideWeight="0.489011" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20880246" sideWeight="0.46031746" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23870574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25091577" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -642,6 +693,34 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32629108" sideWeight="0.510989" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39906102" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="0" y="0" width="370" height="850" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.485348" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958034" sideWeight="0.497558" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32629108" sideWeight="0.489011" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20880246" sideWeight="0.46031746" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24786325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -654,11 +733,18 @@
     <MESSAGE value="1. Make base singleton table model.&#10;2. Add stock_master, stock_minute_price, stock_daily_price.&#10;3. Add test cases." />
     <MESSAGE value="1. Add web scrappers for stock_master, stock_daily_price, stock_trend.&#10;2. Add database_reader and database_writer.&#10;3. Add useful utils." />
     <MESSAGE value="1. Modify .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Modify .gitignore" />
+    <MESSAGE value="1. Add request_supporter, but did not use." />
+    <MESSAGE value="1. Change post to get in krx.get_stock_trends()" />
+    <MESSAGE value="1. Change post to get in krx.get_stock_master()" />
+    <MESSAGE value="1. To solve below problem:&#10;Traceback (most recent call last):&#10;  File &quot;scrapper/database_writer.py&quot;, line 187, in &lt;module&gt;&#10;    save_stock_masters()&#10;  File &quot;scrapper/database_writer.py&quot;, line 35, in save_stock_masters&#10;    new_stock_masters = krx.get_stock_masters()&#10;  File &quot;/home/ubuntu/willbe/scrapper/krx.py&quot;, line 52, in get_stock_masters&#10;    dict_stock_masters = json.loads(BytesIO(r.content).getvalue())['block1']&#10;  File &quot;/usr/lib/python3.5/json/__init__.py&quot;, line 312, in loads&#10;    s.__class__.__name__))&#10;TypeError: the JSON object must be str, not 'bytes'" />
+    <MESSAGE value="1. 일단 save_stock_masters()의 오류는 무시&#10;Traceback (most recent call last):&#10;  File &quot;scrapper/database_writer.py&quot;, line 187, in &lt;module&gt;&#10;    save_stock_masters()&#10;  File &quot;scrapper/database_writer.py&quot;, line 35, in save_stock_masters&#10;    new_stock_masters = krx.get_stock_masters()&#10;  File &quot;/home/ubuntu/willbe/scrapper/krx.py&quot;, line 52, in get_stock_masters&#10;    dict_stock_masters = json.loads(str(BytesIO(r.content).getvalue()))['block1']&#10;  File &quot;/usr/lib/python3.5/json/__init__.py&quot;, line 319, in loads&#10;    return _default_decoder.decode(s)&#10;  File &quot;/usr/lib/python3.5/json/decoder.py&quot;, line 339, in decode&#10;    obj, end = self.raw_decode(s, idx=_w(s, 0).end())&#10;  File &quot;/usr/lib/python3.5/json/decoder.py&quot;, line 357, in raw_decode&#10;    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None&#10;json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)" />
+    <MESSAGE value="1. Add an argparser to database_writer.py" />
+    <MESSAGE value="1. Make sure an existence of directory data by __init__.py." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Make sure an existence of directory data by __init__.py." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="50" />
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -759,73 +845,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/root/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/root/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table/stock_master.py" />
-    <entry file="file://$PROJECT_DIR$/table/stock_daily_price.py" />
-    <entry file="file://$PROJECT_DIR$/root/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1116">
-          <caret line="2526" column="0" lean-forward="false" selection-start-line="2526" selection-start-column="0" selection-end-line="2526" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/stock_master.hdf" />
-    <entry file="file://$PROJECT_DIR$/data/stock_master.h5" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="1841" column="0" lean-forward="false" selection-start-line="1841" selection-start-column="0" selection-end-line="1841" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/indexes/multi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="2479" column="0" lean-forward="false" selection-start-line="2479" selection-start-column="0" selection-end-line="2479" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/pytables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="285" column="4" lean-forward="false" selection-start-line="285" selection-start-column="4" selection-end-line="285" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="1098" column="0" lean-forward="false" selection-start-line="1098" selection-start-column="0" selection-end-line="1098" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/stock_minute_price.csv">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="210">
@@ -856,13 +875,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/util/__init__.py" />
     <entry file="file://$PROJECT_DIR$/util/progress_bar.py" />
-    <entry file="file://$PROJECT_DIR$/util/database_supporter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/table/test_tables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -926,13 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/date_supporter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/parallel_process_supporter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -961,25 +966,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/table/tables.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="1432" column="8" lean-forward="false" selection-start-line="1432" selection-start-column="8" selection-end-line="1432" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/table/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,18 +1031,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/util/request_supporter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/mysql/connector/connection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11865">
+        <state relative-caret-position="495">
           <caret line="812" column="0" lean-forward="false" selection-start-line="812" selection-start-column="0" selection-end-line="812" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1064,31 +1054,173 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/date_supporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/database_supporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table/tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/table/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <element signature="e#74#83#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_check_points/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scrapper/database_writer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state relative-caret-position="586">
+          <caret line="197" column="45" lean-forward="false" selection-start-line="197" selection-start-column="45" selection-end-line="197" selection-end-column="45" />
           <folding>
-            <element signature="e#75#84#0" expanded="true" />
-            <marker date="1516395860004" expanded="true" signature="6284:6363" ph="..." />
+            <element signature="e#75#84#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1277" column="25" lean-forward="false" selection-start-line="1277" selection-start-column="25" selection-end-line="1277" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/argparse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1302" column="8" lean-forward="false" selection-start-line="1302" selection-start-column="8" selection-end-line="1302" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/estimators/estimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="532" column="6" lean-forward="false" selection-start-line="532" selection-start-column="6" selection-end-line="532" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/estimators/dnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="658" column="6" lean-forward="false" selection-start-line="658" selection-start-column="6" selection-end-line="658" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/argument_supporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+          <folding>
+            <element signature="e#75#113#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapper/krx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="286" column="19" lean-forward="false" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="19" />
+        <state relative-caret-position="497">
+          <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
           <folding>
-            <element signature="e#75#86#0" expanded="true" />
+            <element signature="e#75#86#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/request_supporter.py">
+    <entry file="file://$PROJECT_DIR$/model_check_points/weights-improvement-01-0.98.h5">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/logging_supporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#75#95#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/machine_learning_supporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="e#75#84#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/mnist_cnn.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="0">
+          <caret line="0" column="68" lean-forward="false" selection-start-line="0" selection-start-column="68" selection-end-line="0" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keras_examples/mnist_cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
           <folding />
         </state>
       </provider>

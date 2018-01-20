@@ -8,5 +8,8 @@
 # Result image file
 *.png
 
+# Log file
+*.log
+
 # Pycharm file
 .idea
