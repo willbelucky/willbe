@@ -35,7 +35,7 @@ def get_stock_masters():
         '_': '1515578494324',
     }
 
-    r = requests.post(gen_otp_url, gen_otp_data)
+    r = requests.get(gen_otp_url, gen_otp_data)
     code = r.content
 
     # STEP 02: download
