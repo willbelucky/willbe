@@ -8,6 +8,7 @@ import time
 import traceback
 from datetime import datetime
 from pathlib import Path
+import argparse
 
 from sqlalchemy import types
 from sqlalchemy.exc import IntegrityError, SQLAlchemyError, InterfaceError, OperationalError
@@ -20,6 +21,7 @@ from util.database_supporter import get_connection
 from util.date_supporter import get_business_days
 from util.pandas_expansion import df_difference
 from util.parallel_process_supporter import parallel_process
+from util.argument_supporter import valid_date_type
 
 
 def save_stock_masters():
@@ -184,6 +186,21 @@ def save_stock_trend(date):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('-S', '--start_date',
+                        dest='start_date',
+                        type=valid_date_type,
+                        default=datetime(1995, 5, 2),
+                        required=False,
+                        help='start datetime in format "YYYY-mm-dd"')
+    parser.add_argument('-E', '--end_date',
+                        dest='end_date',
+                        type=valid_date_type,
+                        default=datetime.today(),
+                        required=False,
+                        help='start datetime in format "YYYY-mm-dd"')
+    args = parser.parse_args()
+
     # save_stock_masters()
     # save_stock_daily_prices(start_date=datetime.today())
-    save_stock_trends(end_date=datetime(2014, 12, 1))
+    save_stock_trends(start_date=args.start_date, end_date=args.end_date)
