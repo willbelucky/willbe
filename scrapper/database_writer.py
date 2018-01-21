@@ -131,7 +131,7 @@ def save_stock_daily_price(date=datetime.today(), create_table=False):
         connection.close()
 
 
-def save_stock_trends(start_date=datetime(1995, 5, 2), end_date=datetime.today()):
+def save_stock_trends(start_date=datetime(1995, 5, 2), end_date=datetime.today(), process_multiplier=None):
     # 날짜 구해서 역수로 돌려가며 save_stock_trend 병렬로
     schema_name = 'stock_trend'
     start_time = time.time()
@@ -147,7 +147,7 @@ def save_stock_trends(start_date=datetime(1995, 5, 2), end_date=datetime.today()
         connection.close()
 
     dates = get_business_days(start_date, end_date).sort_values(ascending=False)
-    parallel_process(save_stock_trend, dates)
+    parallel_process(save_stock_trend, dates, process_multiplier=process_multiplier)
 
     print(
         "Scrapping {} of {} days is done taking {} seconds!!".format(schema_name, len(dates), time.time() - start_time))
@@ -199,8 +199,14 @@ if __name__ == '__main__':
                         default=datetime.today(),
                         required=False,
                         help='start datetime in format "YYYY-mm-dd"')
+    parser.add_argument('-P', '--process_multiplier',
+                        dest='process_multiplier',
+                        type=int,
+                        default=None,
+                        required=False,
+                        help='The multiplier of processes.')
     args = parser.parse_args()
 
     # save_stock_masters()
     # save_stock_daily_prices(start_date=datetime.today())
-    save_stock_trends(start_date=args.start_date, end_date=args.end_date)
+    save_stock_trends(start_date=args.start_date, end_date=args.end_date, process_multiplier=args.process_multiplier)

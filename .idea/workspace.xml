@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1613472e-564a-4b54-a4bc-033a708d3bb3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/keras_examples/mnist_cnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/logs/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/model_check_points/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/util/logging_supporter.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/util/machine_learning_supporter.py" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/scrapper/database_writer.py" afterPath="$PROJECT_DIR$/scrapper/database_writer.py" />
+      <change beforePath="$PROJECT_DIR$/util/parallel_process_supporter.py" afterPath="$PROJECT_DIR$/util/parallel_process_supporter.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +43,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mnist_cnn.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/keras_examples/mnist_cnn.py">
+      <file leaf-file-name="database_writer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapper/database_writer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+            <state relative-caret-position="281">
+              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parallel_process_supporter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/parallel_process_supporter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="17" column="79" lean-forward="false" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -117,7 +123,6 @@
         <option value="$PROJECT_DIR$/table/test_tables.py" />
         <option value="$PROJECT_DIR$/table/base.py" />
         <option value="$PROJECT_DIR$/util/database_supporter.py" />
-        <option value="$PROJECT_DIR$/util/parallel_process_supporter.py" />
         <option value="$PROJECT_DIR$/scrapper/test_database_writer.py" />
         <option value="$PROJECT_DIR$/scrapper/test_krx.py" />
         <option value="$PROJECT_DIR$/util/pandas_expansion.py" />
@@ -127,7 +132,6 @@
         <option value="$PROJECT_DIR$/util/request_supporter.py" />
         <option value="$PROJECT_DIR$/scrapper/krx.py" />
         <option value="$PROJECT_DIR$/util/argument_supporter.py" />
-        <option value="$PROJECT_DIR$/scrapper/database_writer.py" />
         <option value="$PROJECT_DIR$/data/__init__.py" />
         <option value="$PROJECT_DIR$/logs/__init__.py" />
         <option value="$PROJECT_DIR$/util/logging_supporter.py" />
@@ -135,6 +139,8 @@
         <option value="$PROJECT_DIR$/keras_examples/mnist_cnn.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/util/machine_learning_supporter.py" />
+        <option value="$PROJECT_DIR$/util/parallel_process_supporter.py" />
+        <option value="$PROJECT_DIR$/scrapper/database_writer.py" />
       </list>
     </option>
   </component>
@@ -628,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516483959246</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1. Add logging_supporter and machine_learning_supporter.&#10;2. Add a keras example, mnist_cnn.">
+      <created>1516487818668</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1516487818668</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -667,9 +680,9 @@
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32629108" sideWeight="0.510989" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.51526254" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="370" height="850" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.485348" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286385" sideWeight="0.4847375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32629108" sideWeight="0.489011" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20880246" sideWeight="0.46031746" order="7" side_tool="false" content_ui="tabs" />
@@ -725,6 +738,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -740,7 +779,8 @@
     <MESSAGE value="1. 일단 save_stock_masters()의 오류는 무시&#10;Traceback (most recent call last):&#10;  File &quot;scrapper/database_writer.py&quot;, line 187, in &lt;module&gt;&#10;    save_stock_masters()&#10;  File &quot;scrapper/database_writer.py&quot;, line 35, in save_stock_masters&#10;    new_stock_masters = krx.get_stock_masters()&#10;  File &quot;/home/ubuntu/willbe/scrapper/krx.py&quot;, line 52, in get_stock_masters&#10;    dict_stock_masters = json.loads(str(BytesIO(r.content).getvalue()))['block1']&#10;  File &quot;/usr/lib/python3.5/json/__init__.py&quot;, line 319, in loads&#10;    return _default_decoder.decode(s)&#10;  File &quot;/usr/lib/python3.5/json/decoder.py&quot;, line 339, in decode&#10;    obj, end = self.raw_decode(s, idx=_w(s, 0).end())&#10;  File &quot;/usr/lib/python3.5/json/decoder.py&quot;, line 357, in raw_decode&#10;    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None&#10;json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)" />
     <MESSAGE value="1. Add an argparser to database_writer.py" />
     <MESSAGE value="1. Make sure an existence of directory data by __init__.py." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Make sure an existence of directory data by __init__.py." />
+    <MESSAGE value="1. Add logging_supporter and machine_learning_supporter.&#10;2. Add a keras example, mnist_cnn." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Add logging_supporter and machine_learning_supporter.&#10;2. Add a keras example, mnist_cnn." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -938,13 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/parallel_process_supporter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/core/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -984,13 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="177" column="8" lean-forward="false" selection-start-line="177" selection-start-column="8" selection-end-line="177" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapper/test_database_writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1112,16 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapper/database_writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="197" column="45" lean-forward="false" selection-start-line="197" selection-start-column="45" selection-end-line="197" selection-end-column="45" />
-          <folding>
-            <element signature="e#75#84#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1219,8 +1235,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/keras_examples/mnist_cnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
+        <state relative-caret-position="435">
+          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/test_database_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/parallel_process_supporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="17" column="79" lean-forward="false" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapper/database_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
       </provider>

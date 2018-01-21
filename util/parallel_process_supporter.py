@@ -9,13 +9,13 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from tqdm import tqdm
 
 
-def parallel_process(func, params, processes=None, use_kwargs=False, front_num=1, timeout=None):
+def parallel_process(func, params, process_multiplier=None, use_kwargs=False, front_num=1, timeout=None):
     """
     A parallel version of the map function with a progress bar.
 
     :param params: (array-like) The parameters to iterate over.
     :param func: (function) A python function to apply to the elements of array
-    :param processes: (int, default=None) The number of cores to use.
+    :param process_multiplier: (int, default=None) The multiplier of processes.
         When the processes variable is None, the processes variable become os.cpu_count() or 1
     :param use_kwargs: (boolean, default=False) Whether to consider the elements of array as dictionaries of
         keyword arguments to function
@@ -27,8 +27,9 @@ def parallel_process(func, params, processes=None, use_kwargs=False, front_num=1
     :return results: (?) The result of futures.
     """
     # Set the processes. If getting cpu count is failed, use 1.
-    if processes is None:
-        processes = os.cpu_count() or 1
+    processes = os.cpu_count() or 1
+    if type(process_multiplier) is int:
+        processes = processes * process_multiplier
     # Set the timeout.
     if timeout is None:
         timeout = len(params) + 3
