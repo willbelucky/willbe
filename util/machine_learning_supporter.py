@@ -27,7 +27,7 @@ class SupervisedData:
 
     def evaluate_model(self, model, batch_size, epochs):
         # checkpoint
-        file_name = 'weights-improvement-{epoch:02d}-{val_acc:.2f}.h5'
+        file_name = self.job_name + '-{epoch:02d}-{val_acc:.2f}.h5'
         checkpoint = ModelCheckpoint(MODEL_CHECK_POINT_DIR + file_name, monitor='val_acc', verbose=1,
                                      save_best_only=True, mode='max')
         callbacks_list = [checkpoint]
