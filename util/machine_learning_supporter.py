@@ -16,7 +16,7 @@ MODEL_CHECK_POINT_DIR = os.getcwd().replace(chr(92), '/') + '/model_check_points
 
 class SupervisedData:
 
-    def __init__(self, job_name, x_train, y_train, x_test, y_test, input_shape):
+    def __init__(self, job_name, x_train, y_train, x_test, y_test, input_shape, **kwargs):
         self.x_train = x_train
         self.y_train = y_train
         self.x_test = x_test
@@ -24,6 +24,9 @@ class SupervisedData:
         self.input_shape = input_shape
         self.job_name = job_name
         self.logger = get_logger('InfoLogger', job_name, INFO)
+
+        for k in kwargs.keys():
+            self.__setattr__(k, kwargs[k])
 
     def evaluate_model(self, model, batch_size, epochs):
         # checkpoint
@@ -38,6 +41,6 @@ class SupervisedData:
                   callbacks=callbacks_list,
                   verbose=1,
                   validation_data=(self.x_test, self.y_test))
-        score = model.evaluate(self.x_test, self.y_test, verbose=0)
-        self.logger.info('{} Test loss:{}'.format(self.job_name, score[0]))
-        self.logger.info('{} Test accuracy:{}'.format(self.job_name, score[1]))
+        loss, acc = model.evaluate(self.x_test, self.y_test, verbose=0)
+        self.logger.info('{} Test loss:{}'.format(self.job_name, loss))
+        self.logger.info('{} Test accuracy:{}'.format(self.job_name, acc))
