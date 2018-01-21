@@ -51,6 +51,8 @@ def get_model(input_shape, num_classes):
                   optimizer=RMSprop(),
                   metrics=['accuracy'])
 
+    model.summary()
+
     return model
 
 

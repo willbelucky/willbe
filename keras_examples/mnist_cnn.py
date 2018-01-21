@@ -59,6 +59,8 @@ def get_model(input_shape, num_classes):
                   optimizer=keras.optimizers.Adadelta(),
                   metrics=['accuracy'])
 
+    model.summary()
+
     return model
 
 
