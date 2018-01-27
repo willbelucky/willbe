@@ -30,6 +30,8 @@ def parallel_process(func, params, process_multiplier=None, use_kwargs=False, fr
     processes = os.cpu_count() or 1
     if type(process_multiplier) is int:
         processes = processes * process_multiplier
+
+    print('# of processes:{}'.format(processes))
     # Set the timeout.
     if timeout is None:
         timeout = len(params) + 3
