@@ -89,9 +89,6 @@ def get_stock_masters():
 
     return stock_masters
 
-
-stock_daily_price_usecols = {'종목코드': 'short_code', '거래량': 'volume', '시가': 'open', '고가': 'high', '저가': 'low',
-                             '현재가': 'close', '시가총액': 'market_capitalization', '상장주식수(천주)': 'listed_stocks_number'}
 stock_daily_price_index = ['code', 'date']
 
 
@@ -127,7 +124,7 @@ def get_stock_daily_prices(date=datetime.today()):
         'pagePath': '/contents/MKD/04/0404/04040200/MKD04040200.jsp',
     }
 
-    r = requests.get(url=gen_otp_url, params=gen_otp_data)
+    r = requests.post(url=gen_otp_url, data=gen_otp_data)
     code = r.content
 
     # STEP 02: download
@@ -135,33 +132,16 @@ def get_stock_daily_prices(date=datetime.today()):
     down_data = {
         'code': code,
     }
+    headers = {
+        'referer': gen_otp_url,
+    }
 
-    r = requests.get(down_url, down_data)
+    r = requests.post(down_url, down_data, headers=headers)
     stock_daily_prices = pd.read_excel(BytesIO(r.content), thousands=',')
 
-    assert len(stock_daily_prices.columns) == 15, \
-        'The length of stock_daily_prices.columns should be 15. But current is {}'.format(
-            len(stock_daily_prices.columns))
+    stock_daily_prices['날짜'] = date
 
-    stock_daily_prices = stock_daily_prices[list(stock_daily_price_usecols.keys())]
-    stock_daily_prices = stock_daily_prices.rename(columns=stock_daily_price_usecols)
-    stock_daily_prices['date'] = date
-    # Pad a code with zeros on the left, to fill a 6 width and Pad 'A'.
-    stock_daily_prices['short_code'] = 'A' + stock_daily_prices['short_code'].apply(str).str.zfill(6)
-    stock_daily_prices['open'] = stock_daily_prices['open'].astype(float)
-    stock_daily_prices['high'] = stock_daily_prices['high'].astype(float)
-    stock_daily_prices['low'] = stock_daily_prices['low'].astype(float)
-    stock_daily_prices['close'] = stock_daily_prices['close'].astype(float)
-
-    # If market_capitalization is 0, delete the row.
-    stock_daily_prices = stock_daily_prices.loc[stock_daily_prices['market_capitalization'] != 0]
-
-    # Set the code by stock_masters.
-    stock_masters = StockMaster.instance().select().values().reset_index()
-    stock_daily_prices = pd.merge(stock_daily_prices, stock_masters[['code', 'short_code']], on=['short_code'])
-    stock_daily_prices = stock_daily_prices.drop('short_code', axis=1)
-
-    stock_daily_prices = stock_daily_prices.set_index(stock_daily_price_index)
+    stock_daily_prices = stock_daily_prices.set_index(['날짜', '종목코드'])
 
     return stock_daily_prices
 

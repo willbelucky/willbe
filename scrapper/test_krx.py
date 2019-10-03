@@ -22,13 +22,10 @@ class TestGetStockMasters(TestCase):
 
 class TestGetStockDailyPrices(TestCase):
     def test_get_stock_daily_prices(self):
-        stock_daily_prices = get_stock_daily_prices(datetime(2018, 1, 10))
+        stock_daily_prices = get_stock_daily_prices(datetime(2019, 10, 2))
         self.assertIsNotNone(stock_daily_prices)
-        self.assertEqual(2313, len(stock_daily_prices))
-        testing.assert_array_equal(['code', 'date'], stock_daily_prices.index.names)
-        testing.assert_array_equal(
-            ['volume', 'open', 'high', 'low', 'close', 'market_capitalization', 'listed_stocks_number'],
-            stock_daily_prices.columns.values)
+        self.assertEqual(2422, len(stock_daily_prices))
+        testing.assert_array_equal(['날짜', '종목코드'], stock_daily_prices.index.names)
 
 
 class TestGetStockTrends(TestCase):
